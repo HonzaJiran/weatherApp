@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1740.5 450.5 35 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffc22d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="if_icon-48-moon_316054" transform="translate(1730.5 440.5)">
+    <g id="icon-48-moon" transform="translate(10 10)">
+      <path id="moon" class="cls-1" d="M27.5,45A17.5,17.5,0,1,0,10,27.5,17.5,17.5,0,0,0,27.5,45Zm0-2.917A14.583,14.583,0,1,0,12.917,27.5,14.583,14.583,0,0,0,27.5,42.083Z" transform="translate(-10 -10)"/>
+    </g>
+  </g>
+</svg>
