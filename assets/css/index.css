@@ -5,6 +5,10 @@ body {
   color: #fff;
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
 .root {
   margin-top: 10vh;
 }
@@ -70,6 +74,7 @@ body {
   width: 90%;
   margin-top: 80px;
   font-size: 2em;
+  color: #fff;
 }
 
 .search {
@@ -138,4 +143,8 @@ table img {
 
 .right-sunphases {
   float: right;
+}
+
+table p {
+  margin-bottom: 10px;
 }

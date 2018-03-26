@@ -17,7 +17,7 @@
     <div class="row root">
       <div class="col-2 left-side">
         <div class="location-info-top">
-          <h1>PRAGUE</h1>
+          <h1 class="local_city">PRAGUE</h1>
           <h6>LOCAL TIME : 12:20pm</h6>
           <img src="assets/img/snow.svg" width="60%" alt="cloud-snow">
         </div>
@@ -259,41 +259,41 @@
             </div>
 
             <div class="additional-info">
-                <table border="2px;" style="width:86%">
+                <table style="width:86%">
                     <tr>
                       <th>
-                        <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
-                        <p>40 m/s</p>
+                        <p style="color:#B9B9B9;font-weight:lighter;">Wind speed</p>
+                        <p class="rychlost_vetru">40 m/s</p>
                       </th>
                       <th>
                         <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
                         <p>40 m/s</p>
                       </th>
                       <th>
-                        <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
-                        <p>40 m/s</p>
+                        <p style="color:#B9B9B9;font-weight:lighter;">Pressure</p>
+                        <p class="pressure">40 m/s</p>
                       </th>
                       <th>
-                        <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
-                        <p>40 m/s</p>
+                        <p style="color:#B9B9B9;font-weight:lighter;">Max temperature</p>
+                        <p class="maxTemp">40 m/s</p>
                       </th>
                     </tr>
                     <tr>
                       <td>
-                          <p style="color:#B9B9B9;font-weight:lighter;">Vlhkost</p>
-                          <p>73%</p>
+                          <p style="color:#B9B9B9;font-weight:lighter;">Humidity</p>
+                          <p class="vlhkost">73%</p>
                       </td>
                       <td>
-                          <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
-                          <p>40 m/s</p>
+                          <p style="color:#B9B9B9;font-weight:lighter;">Visibility</p>
+                          <p class="visibility">40 m/s</p>
                       </td>
                       <td>
-                          <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
-                          <p>40 m/s</p>
+                          <p style="color:#B9B9B9;font-weight:lighter;">Precipitation</p>
+                          <p class="precipitation">40 m/s</p>
                       </td>
                       <td>
-                          <p style="color:#B9B9B9;font-weight:lighter;">Rychl. vetru</p>
-                          <p>40 m/s</p>
+                          <p style="color:#B9B9B9;font-weight:lighter;">Min temperature</p>
+                          <p class="minTemp">40 m/s</p>
                       </td>
                   </tr>
               </table>
@@ -303,6 +303,7 @@
       </div>
     </div>
   </div>
+<script src="assets/js/fetch.js"></script>
 </body>
 
 </html>
