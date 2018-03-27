@@ -1,0 +1,150 @@
+body {
+  background: linear-gradient( #FF4A4A, #FF9D9D );
+  background-attachment: fixed;
+  font-family: Helvetica;
+  color: #fff;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.root {
+  margin-top: 10vh;
+}
+
+.left-side, .right-side {
+  height: 80vh;
+}
+
+.left-box, .right-box {
+  height: 100%;
+}
+
+.box-row {
+  height: 100%;
+}
+
+.right-side {
+  background-color: #464362;
+  border-radius: 14px;
+}
+
+.left-side > .location-info-top > h1 {
+  font-weight: bold;
+}
+
+.location-info-top {
+  text-align: center;
+}
+
+.left-side > .rows > .row > img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 25%;
+  transform: translateY(-25%);
+  margin: 0 auto;
+}
+
+.left-side > .rows > .row {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.rows {
+  margin-top: 60px;
+}
+
+.left-side > .location-info-top > img {
+  margin-top: 40px;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 93%;
+    }
+}
+
+.search_input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FF4A4A;
+  width: 90%;
+  margin-top: 80px;
+  font-size: 2em;
+  color: #fff;
+}
+
+.search {
+  text-align: center;
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+}
+
+table img {
+  margin: 15px 0 15px 0;
+}
+
+.day-predict > p {
+  display: inline;
+  padding-right: calc(70%/14);
+}
+
+.day-predict > p:last-child{
+  padding: 0;
+}
+
+.day-predict {
+  margin: 50px 0 50px 0;
+}
+
+.clock-moon {
+  width: 86%;
+  margin: auto;
+  min-height: 200px;
+}
+
+.clock img {
+  margin-left: -80px;
+}
+
+.clock {
+  width: 50%;
+  float: left;
+}
+
+.moon {
+  float: right;
+}
+
+.additional-info > table {
+  margin-top: 50px;
+}
+
+.image {
+  height: 40%;
+  width: 100%;
+}
+
+.image > img {
+  position: relative;
+  bottom: 0;
+}
+
+.left-prediction {
+  width: 50%;
+  float: left;
+}
+
+.right-sunphases {
+  float: right;
+}
+
+table p {
+  margin-bottom: 10px;
+}

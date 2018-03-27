@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1103.889 450.5 267.073 193.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2c8aaa;
+      }
+
+      .cls-2 {
+        fill: #f55;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #3b4a51;
+      }
+
+      .cls-5 {
+        fill: #ff5454;
+      }
+
+      .cls-6 {
+        stroke: #235c6d;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="if_Watch_701487" transform="translate(1101.389 419.1)">
+    <path id="XMLID_384_" class="cls-1" d="M0,82.775Z" transform="translate(2.5 47.331)"/>
+    <g id="XMLID_330_" transform="translate(76.273 31.4)">
+      <path id="XMLID_378_" class="cls-2" d="M96.65,0A96.65,96.65,0,1,1,0,96.65,96.65,96.65,0,0,1,96.65,0Z"/>
+      <circle id="XMLID_377_" class="cls-3" cx="83.541" cy="83.541" r="83.541" transform="translate(12.852 13.109)"/>
+      <path id="XMLID_374_" class="cls-4" d="M67.5,69.9l.771,47.3s3.6,4.627,6.169,0L73.412,70.671h-.257a4.773,4.773,0,0,1-3.342.514A3.553,3.553,0,0,1,67.5,69.9Z" transform="translate(25.808 29.063)"/>
+      <path id="XMLID_371_" class="cls-4" d="M70.5,72.884l48.582-.257s4.37-2.056-.257-4.627l-48.068.771a9.727,9.727,0,0,1,.257,2.056A7.487,7.487,0,0,1,70.5,72.884Z" transform="translate(30.52 26.08)"/>
+      <g id="XMLID_332_" transform="translate(64.776 64.262)">
+        <g id="XMLID_39_">
+          <g id="XMLID_42_" transform="translate(0.363 0.581)">
+            <rect id="XMLID_43_" class="cls-5" width="1.542" height="57.836" transform="translate(41.986 40.896) rotate(135)"/>
+          </g>
+          <circle id="XMLID_41_" class="cls-5" cx="1.285" cy="1.285" r="1.285" transform="translate(40.357 40.357)"/>
+          <circle id="XMLID_40_" class="cls-5" cx="1.542" cy="1.542" r="1.542"/>
+        </g>
+      </g>
+      <circle id="XMLID_331_" class="cls-6" cx="5.398" cy="5.398" r="5.398" transform="translate(91.252 91.252)"/>
+    </g>
+  </g>
+</svg>
