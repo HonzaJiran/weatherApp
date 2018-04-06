@@ -21,15 +21,19 @@ const d = new Date()
       m = d.getMinutes()
       now = h + ' : ' + m
 
-const url ='https://api.openweathermap.org/data/2.5/weather?q=' +
+const urlCurrent ='https://api.openweathermap.org/data/2.5/weather?q=' +
 sessionStorage.getItem('currentLocation') +
 '&APPID=' + token +
 '&units=metric'
 
-fetch(url)
+fetch(urlCurrent)
 .then( res => res.json())
 .then( data => {
   console.log(data)
+
+  const icon = data.weather.map(weatherIcon => {
+    return weatherIcon.icon
+  })
 
   rychlost_vetru.innerHTML = data.wind.speed + ' km/h'
   vlhkost.innerHTML = data.main.humidity + ' %'
@@ -42,4 +46,24 @@ fetch(url)
   maxTemp.innerHTML = data.main.temp_max
   minTemp.innerHTML = data.main.temp_min
   localTime.innerHTML = now
+
+  let current_weather_image = document.createElement("img")
+  current_weather_image.setAttribute('class', 'current_weather')
+  current_weather_image.src = 'http://openweathermap.org/img/w/' + icon + '.png'
+  current_weather_image.alt = 'current weather image'
+  current_weather_image.style.width = '50%'
+  document.querySelector('.image').appendChild(current_weather_image)
+})
+
+
+const urlForecast ='https://api.openweathermap.org/data/2.5/forecast?q=' +
+sessionStorage.getItem('currentLocation') +
+'&APPID=' + token +
+'&units=metric'
+
+fetch(urlForecast)
+.then( res => res.json())
+.then( data => {
+  console.log(data)
+
 })

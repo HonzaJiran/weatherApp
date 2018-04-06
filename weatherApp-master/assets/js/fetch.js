@@ -1,5 +1,7 @@
 'use strict'
 
+//const weatherIcons = require("../img/icons/weather_icons.json")
+
 let local_city = document.querySelector('.local_city')
 let rychlost_vetru = document.querySelector('.rychlost_vetru')
 let vlhkost = document.querySelector('.vlhkost')
@@ -23,6 +25,9 @@ city.addEventListener('keypress', (e) => {
         .then( res => res.json())
         .then( data => {
             console.log(data)
+            const icon = data.weather.map(weatherIcon => {
+              return weatherIcon.icon
+            })
 
             rychlost_vetru.innerHTML = data.wind.speed + ' km/h'
             vlhkost.innerHTML = data.main.humidity + ' %'
@@ -34,6 +39,30 @@ city.addEventListener('keypress', (e) => {
             //precipitation.innerHTML = data.precipitation.value + ' mm'
             maxTemp.innerHTML = data.main.temp_max
             minTemp.innerHTML = data.main.temp_min
+
+            try {
+              document.querySelector('.current_weather').remove();
+            } catch (e) {
+
+            }
+            let current_weather_image = document.createElement("img")
+            current_weather_image.setAttribute('class', 'current_weather')
+            current_weather_image.src = 'http://openweathermap.org/img/w/' + icon + '.png'
+            current_weather_image.alt = 'current weather image'
+            current_weather_image.style.width = '50%'
+            document.querySelector('.image').appendChild(current_weather_image)
         })
     }
 })
+
+//var prefix = 'wi wi-';
+//var code = resp.weather[0].id;
+//var icon = weatherIcons[code].icon;
+
+// If we are not in the ranges mentioned above, add a day/night prefix.
+//if (!(code > 699 && code < 800) && !(code > 899 && code < 1000)) {
+//  icon = 'day-' + icon;
+//}
+
+// Finally tack on the prefix.
+//icon = prefix + icon;
